@@ -1,0 +1,9 @@
+$badge-primary-background:                       $global-primary-background !default;
+$badge-primary-light-background:                 lighten($global-primary-background, 25%) !default;
+$badge-color-primary:                            darken($global-primary-background, 25%) !default;
+$badge-success-background:                       $global-success-background !default;
+$badge-success-light-background:                 lighten($global-success-background, 25%) !default;
+$badge-color-success:                            darken($global-success-background, 25%) !default;
+$badge-warning-background:                       $global-warning-background !default;
+$badge-warning-light-background:                 lighten($global-warning-background, 20%) !default;
+$badge-color-warning:                            darken($global-warning-background, 25%) !default;

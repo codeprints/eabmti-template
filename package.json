@@ -1,0 +1,21 @@
+{
+  "name": "eabmti-theme",
+  "version": "1.0.0",
+  "description": "eabmti.org customer-end theme",
+  "main": "sass/styles.sass",
+  "watch": {
+    "extensions": "scss,index"
+  },
+  "scripts": {
+    "css-build": "node-sass --omit-source-map-url sass/styles.scss css/styles.css",
+    "css-watch": "npm run css-build -- --watch sass/",
+    "start": "npm run css-watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "James Sinkala",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.14.1",
+    "uikit": "^3.5.8"
+  }
+}

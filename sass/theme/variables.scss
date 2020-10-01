@@ -1,0 +1,37 @@
+// $global-link-color: #DA7D02;
+// $global-primary-background: #40dbb1 !default;
+// $global-secondary-background: #f9a451 !default;
+// $global-background: #4747ed !default;
+
+$global-warning-background: #f9a451 !default;
+$global-danger-background: #da1036 !default;
+$global-success-background: #40dbb1 !default;
+$global-primary-background: #4d4ded !default;
+$global-inverse-color: #ffffff;
+$global-medium-box-shadow: 0 5px 15px rgba(0,0,0,0.08) !default;
+$global-large-box-shadow: 0 14px 25px rgba(0,0,0,0.16) !default;
+
+// buttons
+//$button-warning-background: $global-warning-background;
+//$button-warning-color: $global-inverse-color;
+//$button-warning-hover-background: darken($button-warning-background, 5%) !default;
+//$button-warning-hover-color: $global-inverse-color;
+//$button-warning-active-background: darken($button-warning-background, 10%) !default;
+//$button-warning-active-color: $global-inverse-color;
+//$button-success-background: $global-success-background;
+//$button-success-color: $global-inverse-color;
+//$button-success-hover-background: darken($button-success-background, 5%) !default;
+//$button-success-hover-color: $global-inverse-color;
+//$button-success-active-background: darken($button-success-background, 10%) !default;
+//$button-success-active-color: $global-inverse-color;
+
+// cards
+$card-warning-box-shadow: $global-medium-box-shadow !default;
+$card-warning-hover-box-shadow: $global-large-box-shadow !default;
+$card-success-box-shadow: $global-medium-box-shadow !default;
+$card-success-hover-box-shadow: $global-large-box-shadow !default;
+
+// badge
+$badge-padding-vertical: 8px !default;
+$badge-padding-horizontal: 8px !default;
+$badge-font-size: 0.79rem !default;

@@ -1,0 +1,42 @@
+// 1. Your custom variables and variable overwrites.
+@import "theme/variables.scss";
+@import "theme/navbar.scss";
+@import "theme/button.scss";
+@import "theme/card.scss";
+@import "theme/badge.scss";
+
+// 2. Import default variables and available mixins.
+@import "../node_modules/uikit/src/scss/variables.scss";
+@import "../node_modules/uikit/src/scss/mixins.scss";
+
+// 3. Your custom mixin overwrites.
+@import "theme/navbar-mixins.scss";
+@import "theme/button-mixins.scss";
+@import "theme/card-mixins.scss";
+@import "theme/badge-mixins.scss";
+
+// 4. Import UIkit.
+@import "../node_modules/uikit/src/scss/uikit.scss";
+@import "../node_modules/uikit/src/scss/uikit-theme.scss";
+
+
+/* FOR CUSTOMIZATION
+// 1. Your custom variables and variable overwrites.
+@import "theme/accordion.scss";
+@import "theme/alert.scss";
+@import "theme/align.scss";
+// ... import all
+
+// 2. Import default variables and available mixins.
+@import "uikit/src/scss/variables.scss";
+@import "uikit/src/scss/mixins.scss";
+
+// 3. Your custom mixin overwrites.
+@import "theme/accordion-mixins.scss";
+@import "theme/alert-mixins.scss";
+@import "theme/align-mixins.scss";
+// ... import all
+
+// 4. Import UIkit
+@import "uikit/src/scss/uikit.scss";
+*/

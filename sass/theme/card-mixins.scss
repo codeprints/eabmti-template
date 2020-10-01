@@ -1,0 +1,60 @@
+/*
+ * Warning
+ */
+
+.uk-card-warning {
+    background: $card-warning-background;
+    color: $card-warning-color;
+    @if(mixin-exists(hook-card-warning)) {@include hook-card-warning();}
+}
+
+.uk-card-warning .uk-card-title {
+    color: $card-warning-title-color;
+    @if(mixin-exists(hook-card-warning-title)) {@include hook-card-warning-title();}
+}
+
+.uk-card-warning.uk-card-hover:hover {
+    background-color: $card-warning-hover-background;
+    @if(mixin-exists(hook-card-warning-hover)) {@include hook-card-warning-hover();}
+}
+
+// Color Mode
+@if ( $card-warning-color-mode == light ) { .uk-card-warning.uk-card-body { @extend .uk-light !optional;} }
+@if ( $card-warning-color-mode == light ) { .uk-card-warning > :not([class*='uk-card-media']) { @extend .uk-light !optional;} }
+@if ( $card-warning-color-mode == dark ) { .uk-card-warning.uk-card-body { @extend .uk-dark !optional;} }
+@if ( $card-warning-color-mode == dark ) { .uk-card-warning > :not([class*='uk-card-media']) { @extend .uk-dark !optional;} }
+
+
+
+/*
+ * Success
+ */
+
+.uk-card-success {
+    background: $card-success-background;
+    color: $card-success-color;
+    @if(mixin-exists(hook-card-success)) {@include hook-card-success();}
+}
+
+.uk-card-success .uk-card-title {
+    color: $card-success-title-color;
+    @if(mixin-exists(hook-card-success-title)) {@include hook-card-success-title();}
+}
+
+.uk-card-success.uk-card-hover:hover {
+    background-color: $card-success-hover-background;
+    @if(mixin-exists(hook-card-success-hover)) {@include hook-card-success-hover();}
+}
+
+// Color Mode
+@if ( $card-success-color-mode == light ) { .uk-card-success.uk-card-body { @extend .uk-light !optional;} }
+@if ( $card-success-color-mode == light ) { .uk-card-success > :not([class*='uk-card-media']) { @extend .uk-light !optional;} }
+@if ( $card-success-color-mode == dark ) { .uk-card-success.uk-card-body { @extend .uk-dark !optional;} }
+@if ( $card-success-color-mode == dark ) { .uk-card-success > :not([class*='uk-card-media']) { @extend .uk-dark !optional;} }
+
+@mixin hook-card-warning(){ box-shadow: $card-warning-box-shadow; }
+@mixin hook-card-warning-title(){}
+@mixin hook-card-warning-hover(){ box-shadow: $card-warning-hover-box-shadow; }
+@mixin hook-card-success(){ box-shadow: $card-success-box-shadow; }
+@mixin hook-card-success-title(){}
+@mixin hook-card-success-hover(){ box-shadow: $card-success-hover-box-shadow; }

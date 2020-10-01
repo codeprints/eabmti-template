@@ -1,0 +1,38 @@
+
+// primary badge light modification
+.uk-badge.uk-badge-primary.uk-badge-light {
+    background: $badge-primary-light-background !important;
+    color: $badge-color-primary !important;
+    font-weight: 500;
+}
+
+/*
+ * 1. Success Badge
+ */
+
+.uk-badge.uk-badge-success {
+    /* 1 */
+    background: $badge-success-background !important;
+}
+
+// light modification
+.uk-badge.uk-badge-success.uk-badge-light {
+    background: $badge-success-light-background !important;
+    color: $badge-color-success !important;
+    font-weight: 500;
+}
+
+/*
+ * 1. Warning Badge
+ */
+
+.uk-badge.uk-badge-warning {
+    background: $badge-warning-background !important;
+}
+
+// light modification
+.uk-badge.uk-badge-warning.uk-badge-light {
+    background: $badge-warning-light-background !important;
+    color: $badge-color-warning !important;
+    font-weight: 500;
+}

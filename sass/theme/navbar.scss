@@ -1,0 +1,9 @@
+// Variables
+// ========================================================================
+
+$navbar-item-color:                              $global-warning-background !default;
+$navbar-nav-item-color:                          $global-warning-background !default;
+$navbar-nav-item-hover-color:                    darken($navbar-nav-item-color, 20%) !default;
+$navbar-nav-item-onclick-color:                  lighten($navbar-nav-item-color, 20%) !default;
+$navbar-nav-item-active-color:                   darken($navbar-nav-item-color, 25%) !default;
+$navbar-nav-item-font-size:                      18px !default;
