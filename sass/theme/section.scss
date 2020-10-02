@@ -1,0 +1,14 @@
+// Variables
+// ========================================================================
+
+$section-primary-background-light:               lighten($global-primary-background, 25%) !default;
+
+$section-secondary-background-light:               lighten($global-secondary-background, 25%) !default;
+
+$section-warning-background:                     $global-warning-background !default;
+$section-warning-background-light:               lighten($global-warning-background, 25%) !default;
+$section-warning-color-mode:                     light !default;
+
+$section-success-background:                     $global-success-background !default;
+$section-success-background-light:               lighten($global-success-background, 25%) !default;
+$section-success-color-mode:                     light !default;

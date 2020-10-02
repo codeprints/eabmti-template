@@ -4,6 +4,7 @@
 @import "theme/button.scss";
 @import "theme/card.scss";
 @import "theme/badge.scss";
+@import "theme/section.scss";
 
 // 2. Import default variables and available mixins.
 @import "../node_modules/uikit/src/scss/variables.scss";
@@ -14,10 +15,17 @@
 @import "theme/button-mixins.scss";
 @import "theme/card-mixins.scss";
 @import "theme/badge-mixins.scss";
+@import "theme/section-mixins.scss";
 
 // 4. Import UIkit.
 @import "../node_modules/uikit/src/scss/uikit.scss";
 @import "../node_modules/uikit/src/scss/uikit-theme.scss";
+
+// custom styles
+
+.uk-logo > img {
+  max-height: 70px;
+}
 
 
 /* FOR CUSTOMIZATION

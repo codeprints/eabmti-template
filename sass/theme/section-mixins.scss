@@ -1,0 +1,77 @@
+/* ========================================================================
+   Component: Section
+ ========================================================================== */
+
+/* Style modifiers
+ ========================================================================== */
+
+/*
+ * Primary
+ */
+
+.uk-section-primary.uk-section-light {
+    background: $section-primary-background-light;
+    color: #222;
+}
+.uk-section-primary.uk-section-light > * {
+    color: #222 !important;
+}
+
+
+/*
+ * Secondary
+ */
+
+.uk-section-secondary.uk-section-light {
+    background: $section-secondary-background-light;
+}
+
+/*
+ * Warning
+ */
+
+.uk-section-warning {
+    background: $section-warning-background;
+    @if(mixin-exists(hook-section-warning)) {@include hook-section-warning();}
+    //& .uk-section-warning.uk-section-light {
+    //    background: $section-warning-background-light;
+    //    @if(mixin-exists(hook-section-warning)) {@include hook-section-warning();}
+    //}
+}
+
+.uk-section-warning.uk-section-light {
+    background: $section-warning-background-light;
+    color: #222;
+    @if(mixin-exists(hook-section-warning)) {@include hook-section-warning();}
+}
+.uk-section-warning.uk-section-light > * {
+    color: #222 !important;
+}
+
+@if ( $section-warning-color-mode == light ) { .uk-section-warning:not(.uk-preserve-color) { @extend .uk-light !optional;} }
+@if ( $section-warning-color-mode == dark ) { .uk-section-warning:not(.uk-preserve-color) { @extend .uk-dark !optional;} }
+
+/*
+ * Success
+ */
+
+.uk-section-success{
+    background: $section-success-background;
+    @if(mixin-exists(hook-section-success)) {@include hook-section-success();}
+}
+
+.uk-section-success.uk-section-light{
+    background: $section-success-background-light;
+    color: #222;
+    @if(mixin-exists(hook-section-success)) {@include hook-section-success();}
+}
+.uk-section-success.uk-section-light > *{
+    color: #222 !important;
+}
+
+@if ( $section-success-color-mode == light ) { .uk-section-success:not(.uk-preserve-color) { @extend .uk-light !optional;} }
+@if ( $section-success-color-mode == dark ) { .uk-section-success:not(.uk-preserve-color) { @extend .uk-dark !optional;} }
+
+
+ @mixin hook-section-warning(){}
+ @mixin hook-section-success(){}
